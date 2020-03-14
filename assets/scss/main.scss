@@ -1622,9 +1622,189 @@ body {
     margin-bottom: 50px;
   }
   a {
+    img {
+      transition: 0.7s;
+    }
     &:hover {
       img {
-        opacity: 0.6s;
+        -moz-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+.session-single-grupo {
+  position: relative;
+  h2 {
+    color: #19e9ff;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .box-conteudo {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .box {
+    p {
+      margin: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 47px;
+      color: black;
+    }
+    a {
+      text-transform: uppercase;
+      margin-left: 2px;
+      font-weight: 600;
+      color: black;
+      img {
+        margin-left: 20px;
+        transition: 0.7s;
+      }
+      &:hover {
+        img {
+          margin-left: 40px;
+        }
+      }
+    }
+    a:after {
+      content: "";
+      width: 10%;
+      height: 2px;
+      display: block;
+      background: #19e9ff;
+      margin-top: 5px;
+    }
+    .valor {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 200px;
+      p {
+        text-transform: uppercase;
+      }
+      span {
+        color: #19e9ff;
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        bottom: 5px;
+      }
+      strong {
+        color: black;
+        font-weight: 600;
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+.session-single-grupo-compra {
+  position: relative;
+  h2 {
+    color: #19e9ff;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .box-conteudo {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .box {
+    form {
+      width: 55%;
+      .form-control {
+        border: 1px solid #19e9ff;
+        border-radius: 0 !important;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 47px;
+      color: black;
+    }
+    a.buy {
+      text-transform: uppercase;
+      margin-left: 2px;
+      font-weight: 600;
+      color: black;
+      img {
+        margin-left: 20px;
+        transition: 0.7s;
+      }
+      &:hover {
+        img {
+          margin-left: 40px;
+        }
+      }
+    }
+    a.buy:after {
+      content: "";
+      width: 10%;
+      height: 2px;
+      display: block;
+      background: #19e9ff;
+      margin-top: 5px;
+    }
+    .valor {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 200px;
+      p {
+        text-transform: uppercase;
+        position: relative;
+        top: 5px;
+      }
+      span {
+        color: #19e9ff;
+        font-weight: 600;
+        font-size: 25px;
+        position: relative;
+        bottom: 5px;
+      }
+      strong {
+        color: black;
+        font-weight: 600;
+        font-size: 45px;
+      }
+    }
+    .formas {
+      margin-top: 20px;
+      width: 370px;
+      .formaspagamento {
+        margin-top: 10px;
+        color: #787878;
+        font-size: 18px;
+        font-weight: 100;
+      }
+      .link {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: #787878;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: 100;
+        a {
+          display: flex;
+          align-items: baseline;
+          img {
+            width: 25px;
+            margin-left: 5px;
+          }
+        }
       }
     }
   }
